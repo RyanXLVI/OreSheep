@@ -1,0 +1,15 @@
+[
+{
+  "modid": "oresheep",
+  "name": "Ore Sheep",
+  "description": "A resource generation mod using sheep",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["McJty"],
+  "credits": "McJty",
+  "logoFile": "",
+  "screenshots": []
+}
+]

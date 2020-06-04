@@ -18,10 +18,6 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 repositories {
-    maven { // The repo from which to get waila
-        name "Mobius Repo"
-        url "http://tehnut.info/maven"
-    }
     maven { // JEI
         url "http://dvs1.progwml6.com/files/maven"
     }
@@ -39,8 +35,8 @@ repositories {
 }
 
 version = "0.0.1"
-group= "mcjty.mymod"
-archivesBaseName = "mymod"
+group= "ryanxlvi.oresheep"
+archivesBaseName = "oresheep"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -58,7 +54,6 @@ dependencies {
     // at runtime, use the full JEI jar
     runtime "mezz.jei:jei_1.12.2:4.13.1.222"
 
-    deobfCompile "mcp.mobius.waila:Hwyla:1.8.18-B32_1.12:api"
     deobfCompile "cofh:RedstoneFlux:1.12-2.0.0.1:universal"
     deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.14-7"
     deobfCompile "com.github.mcjty:intwheel:1.12-1.2.7"
