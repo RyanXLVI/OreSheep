@@ -1,5 +1,7 @@
 package ryanxlvi.oresheep;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -20,6 +22,13 @@ public class OreSheep {
 
     @SidedProxy(clientSide = "ryanxlvi.oresheep.proxy.ClientProxy", serverSide = "ryanxlvi.oresheep.proxy.ServerProxy")
     public static CommonProxy proxy;
+
+    public static CreativeTabs tabOreSheep = new CreativeTabs("Ore Sheep") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack((ModBlocks.blockFastFurnace));
+        }
+    };
 
     @Mod.Instance
     public static OreSheep instance;
